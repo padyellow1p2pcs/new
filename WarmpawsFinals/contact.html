@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | WarmPaws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo-section">
+        <img src="images/WarmPaws_logo.png" alt="WarmPaws Logo" />
+      </a>
+     <span class="logo">WarmPaws</span>
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html"class="active">Contact</a></li>
+  </ul>
+</header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Send us a message — we’d love to help!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+    <p>"We'd love to hear from you — let's help more paws together!"</p>
+
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">X</a>
+      <p>Email: support@warmpaws.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 WarmPaws | All rights reserved.<br>
+    BSIS Students | Squad on Shuffle</p>
+  </footer>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Optional: hide nav when link clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
+
+</html>

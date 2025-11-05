@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features | WarmPaws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo-section">
+        <img src="images/WarmPaws_logo.png" alt="WarmPaws Logo" />
+      </a>
+     <span class="logo">WarmPaws</span>
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html"class="active">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+  <section class="features">
+    <h2>App Services</h2>
+    <div class="feature-grid">
+      
+      <div class="card">
+        <h3>🐶 Adopt a Friend Today</h3>
+        <p>Find your perfect furry friend and give them a loving home with just a few taps.</p>
+        <div class="hero-image">
+      <img src="images/adption.png" alt="App" />
+    </div>
+      </div>
+      <div class="card">
+        <h3>🚨 Help Save a Stray</h3>
+        <p>Report stray or injured animals and help rescuers save lives faster.</p>
+        <div class="hero-image">
+      <img src="images/Rescue.png" alt="App" />
+    </div>
+      </div>
+      <div class="card">
+        <h3>🔎 Find Lost Pets</h3>
+        <p>Post and search for missing pets to help reunite them with their families.</p>
+        <div class="hero-image">
+      <img src="images/Missing.png" alt="App" />
+    </div>
+      </div>
+      <div class="card">
+        <h3>💞 Join the Paw Community</h3>
+        <p>Connect with other pet lovers, share stories, and spread kindness for animals.</p>
+        <div class="hero-image">
+      <img src="images/community.png" alt="App" />
+    </div>
+      </div>
+      <div class="card">
+        <h3>🏥 Pet Shop & Clinic Promotions</h3>
+        <p>Local pet shops and clinics can advertise their services to reach more pet owners.</p>
+        <div class="hero-image">
+      <img src="images/compa.png" alt="App" />
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 WarmPaws | All rights reserved.<br>
+    BSIS Students | Squad on Shuffle</p>
+  </footer>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Optional: hide nav when link clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
+
+</html>

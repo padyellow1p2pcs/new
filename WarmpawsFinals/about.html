@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | WarmPaws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo-section">
+        <img src="images/WarmPaws_logo.png" alt="WarmPaws Logo" />
+      </a>
+     <span class="logo">WarmPaws</span>
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html"class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+  <section class="content">
+    <h2>Our Mission</h2>
+    <p>WarmPaws aims to help stray dogs and cats find loving and safe homes. We believe that every pet, no matter where it came from, deserves care, kindness, and a family who will love them. Through our app, people can report stray animals, adopt rescued pets, and share updates about their furry friends.<br>
+
+    Our goal is to make it easier for rescuers, adopters, and animal lovers to connect in one place. WarmPaws also helps spread awareness about animal welfare and responsible pet ownership. We want to build a caring community that works together to give every stray a second chance and a place they can finally call home.</p>
+
+    <h2>Our Story</h2>
+    <p>WarmPaws started because we saw many stray animals on the streets without food or shelter. We wanted to make a way to help them get rescued and adopted easily. That’s why we created an app where people can adopt pets and report strays who need help.</p>
+
+    <h2>The Team</h2>
+    <p>We are a group of students who love animals and want to make a change. Our goal is to save more strays and encourage adoption. We also promote pet shops and clinics through ads to support the pet community and keep the app running.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 WarmPaws | All rights reserved.<br>
+    BSIS Students | Squad on Shuffle</p>
+  </footer>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Optional: hide nav when link clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
+
+</html>

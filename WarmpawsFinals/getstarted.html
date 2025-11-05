@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started | WarmPaws</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo-section">
+        <img src="images/WarmPaws_logo.png" alt="WarmPaws Logo" />
+      </a>
+     <span class="logo">WarmPaws</span>
+    </div>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+  <section class="steps improved-steps">
+  <div class="steps-container">
+    
+    <h2>How WarmPaws Works 🐾</h2>
+    
+
+    <div class="steps-grid">
+      <div class="step-card">📱 Download WarmPaws</div>
+      <div class="step-card">👤 Create Your Profile</div>
+      <div class="step-card">🐶 Browse Pets for Adoption</div>
+      <div class="step-card">💌 Connect with Shelters & Rescuers</div>
+    </div>
+
+    <div class="download-section">
+      <h3>Download the App</h3>
+      <a href="#" class="btn primary">Google Play</a>
+      <a href="#" class="btn secondary">App Store</a>
+      <p>Coming soon!</p>
+    </div></div>
+  </section>
+
+  <footer>
+    <p>© 2025 WarmPaws | All rights reserved.<br>
+    BSIS Students | Squad on Shuffle</p>
+  </footer>
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+
+  // Optional: hide nav when link clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
+
+</html>
